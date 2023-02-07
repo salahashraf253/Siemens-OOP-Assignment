@@ -5,10 +5,10 @@ Frame::Frame() {
 
 }
 
-
 Frame::~Frame() {
-
+    
 }
+
 void Frame::setRawPacket (std::string rawPacket) {
     this -> rawPacket = rawPacket;
 };  

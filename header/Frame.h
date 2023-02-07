@@ -1,4 +1,8 @@
 #include <string>
+
+#ifndef __FRAME
+#define __FRAME
+
 class Frame
 {
 private:
@@ -15,6 +19,7 @@ public:
     void setDestinationAddress (std::string);
     void setType (std::string);
     void setCRC (std::string);
-    ~Frame();
+    virtual ~Frame();
 };
 
+#endif 
