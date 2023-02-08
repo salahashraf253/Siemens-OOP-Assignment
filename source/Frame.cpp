@@ -18,7 +18,7 @@ void Frame::setSourceAddress (std::string sourceAddress) {
 };
 
 void Frame::setDestinationAddress (std::string destinationAddress) {
-    this -> destinationAddress;
+    this -> destinationAddress = destinationAddress;
 };
 void Frame::setType (std::string type) {
     this -> type = type;
