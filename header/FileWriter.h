@@ -1,10 +1,10 @@
 #include <fstream>
-#include"FileHandling.h"
+#include "FileHandling.h"
 
-// #ifndef UNTITLED_FILEWRITER_H
-// #define UNTITLED_FILEWRITER_H
+#ifndef UNTITLED_FILEWRITER_H
+#define UNTITLED_FILEWRITER_H
 
-class FileWriter:public FileHandling
+class FileWriter : public FileHandling
 {
 private:
     std::ofstream fileStream;
@@ -17,4 +17,4 @@ public:
     FileWriter(std::string);
     ~FileWriter();
 };
-// #endif 
+#endif
