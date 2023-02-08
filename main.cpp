@@ -4,6 +4,10 @@
 int main()
 {
     Runner runnner;
-    runnner.readFrames();
-    runnner.writeParsedFrames();
+    std::cout << "Hello\n";
+    runnner.readFrames("input_packets.txt");
+    runnner.writeParsedFrames("Somehting.txt");
+    runnner.printParsedFrame();
+
+
 }

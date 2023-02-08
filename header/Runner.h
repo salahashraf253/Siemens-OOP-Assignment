@@ -9,11 +9,12 @@ class Runner
 {
 private:
     std::vector<std::string>rawPackets;
-    std::vector<Frame>parsedFrames;
-
+    std::vector<Frame* >parsedFrames;
+    void parseFrames();
 public:
     Runner();
     ~Runner();
-    void readFrames();
-    void writeParsedFrames();
+    void readFrames(std:: string);
+    void writeParsedFrames(std::string);
+    void printParsedFrame();
 };
