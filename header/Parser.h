@@ -2,6 +2,7 @@
 #define UNTITLED_PARSER_H
 
 #include <string>
+#include "Frame.h"
 
 class Parser
 {

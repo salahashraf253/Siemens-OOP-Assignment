@@ -9,7 +9,7 @@
 class EthernetParser : public Parser
 {
 public:
-    Frame *getParsedFrame() override;
+    EthernetFrame *getParsedFrame() override;
     EthernetParser();
     ~EthernetParser();
 };

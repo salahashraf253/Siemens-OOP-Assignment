@@ -17,7 +17,7 @@ private:
     std::string getRtcId();
 
 public:
-    Frame *getParsedFrame() override;
+    eCRPIFrame *getParsedFrame() override;
     EcpriParser();
     ~EcpriParser();
 };

@@ -48,7 +48,7 @@ std::string EcpriParser::getRtcId()
     std::string rtcId=this->rawPacket.substr(52,4);
     return rtcId;
 }
-Frame* EcpriParser::getParsedFrame()
+eCRPIFrame* EcpriParser::getParsedFrame()
 {
     eCRPIFrame *ecrpiFrame=new eCRPIFrame();
     ecrpiFrame->setCRC(this->getCRC());
@@ -61,5 +61,7 @@ Frame* EcpriParser::getParsedFrame()
     ecrpiFrame->setSequenceId(this->getSequenceId());
     ecrpiFrame->setSourceAddress(this->getSourceAddress());
     ecrpiFrame->setType(this->getType());
+    ecrpiFrame->setRawPacket(this -> rawPacket);
+    
     return ecrpiFrame;
 }
