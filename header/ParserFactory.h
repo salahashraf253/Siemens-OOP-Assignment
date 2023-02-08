@@ -9,7 +9,7 @@
 class ParserFactory
 {
 public:
-    Parser* getParser(std::string packetType,std::string rawPacket);
+    Parser* getParser(std::string packetType);
     ParserFactory();
     ~ParserFactory();
 };
