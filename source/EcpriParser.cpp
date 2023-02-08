@@ -1,14 +1,22 @@
 #include"../header/EcpriParser.h"
 #include<iostream>
 
-EcpriParser::EcpriParser(std::string rawPacket):Parser(rawPacket)
+// EcpriParser::EcpriParser(std::string rawPacket):Parser(rawPacket)
+// {
+//     // std::cout<<"Message type: "<<this->getMessageType()<<"\n";
+//     // std::cout<<"Payload size: "<<this->getPayloadSize()<<"\n";
+//     // std::cout<<"Protocol version: "<<this->getProtocolVersion()<<"\n";
+//     // std::cout<<"Sequence Id: "<<this->getSequenceId()<<"\n";
+//     // std::cout<<"RTC Id: "<<this->getRtcId()<<"\n";
+//     // std::cout<<"concatenation Indicator : "<<this->getConcatenationIndicator()<<"\n";
+// }
+EcpriParser::EcpriParser()
 {
-    // std::cout<<"Message type: "<<this->getMessageType()<<"\n";
-    // std::cout<<"Payload size: "<<this->getPayloadSize()<<"\n";
-    // std::cout<<"Protocol version: "<<this->getProtocolVersion()<<"\n";
-    // std::cout<<"Sequence Id: "<<this->getSequenceId()<<"\n";
-    // std::cout<<"RTC Id: "<<this->getRtcId()<<"\n";
-    // std::cout<<"concatenation Indicator : "<<this->getConcatenationIndicator()<<"\n";
+
+}
+EcpriParser::~EcpriParser()
+{
+
 }
 std::string EcpriParser::getConcatenationIndicator()
 {
@@ -39,4 +47,19 @@ std::string EcpriParser::getRtcId()
 {
     std::string rtcId=this->rawPacket.substr(52,4);
     return rtcId;
+}
+Frame* EcpriParser::getParsedFrame()
+{
+    eCRPIFrame *ecrpiFrame=new eCRPIFrame();
+    ecrpiFrame->setCRC(this->getCRC());
+    ecrpiFrame->setConcatenationIndicator(this->getConcatenationIndicator());
+    ecrpiFrame->setDestinationAddress(this->getDestinationAddress());
+    ecrpiFrame->setMessageType(this->getMessageType());
+    ecrpiFrame->setPayloadSize(this->getPayloadSize());
+    ecrpiFrame->setProtocolVersion(this->getProtocolVersion());
+    ecrpiFrame->setRtcId(this->getRtcId());
+    ecrpiFrame->setSequenceId(this->getSequenceId());
+    ecrpiFrame->setSourceAddress(this->getSourceAddress());
+    ecrpiFrame->setType(this->getType());
+    return ecrpiFrame;
 }

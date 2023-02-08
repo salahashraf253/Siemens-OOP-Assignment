@@ -1,6 +1,6 @@
 #include"../header/EthernetParser.h"
 
-EthernetParser::EthernetParser(std::string rawPacket):Parser(rawPacket)
+EthernetParser::EthernetParser():Parser()
 {
 
 }
@@ -8,12 +8,8 @@ EthernetParser::~EthernetParser()
 {
 
 }
-EthernetParser::EthernetParser() :Parser()
+Frame* EthernetParser::getParsedFrame()
 {
 
-}
-std::string EthernetParser::getData()
-{
-    std::string data=this->rawPacket.substr(46*2,rawPacket.size()-(26*2));
-    return data;
+    return new EthernetFrame();
 }
