@@ -1,18 +1,16 @@
-#include"Parser.h"
-#include<string>
-
 #ifndef UNTITLED_ETHERNETPARSER_H
 #define UNTITLED_ETHERNETPARSER_H
 
+#include "Parser.h"
+#include <string>
+#include "Frame.h"
+#include "EthernetFrame.h"
+
 class EthernetParser : public Parser
 {
-private:
-    /* data */
 public:
-    std::string getData();
-    EthernetParser(std::string );
+    Frame *getParsedFrame() override;
     EthernetParser();
-
     ~EthernetParser();
 };
 #endif
