@@ -1,14 +1,14 @@
 #include"../header/ParserFactory.h"
 
-Parser* ParserFactory::getParser(std::string packetType, std::string rawPacket)
+Parser* ParserFactory::getParser(std::string packetType)
 {
     if(packetType=="88F7")
     {
-        return new EthernetParser(rawPacket);
+        return new EthernetParser();
     }
     else if(packetType=="AEFE")
     {
-        return new EcpriParser(rawPacket);
+        return new EcpriParser();
     }
 }
 ParserFactory::ParserFactory()
