@@ -9,27 +9,27 @@ eCRPIFrame::~eCRPIFrame() {
 
 }
 
-std::string eCRPIFrame::setMessageType(std::string messageType) {
+void eCRPIFrame::setMessageType(std::string messageType) {
     this -> messageType = messageType;
 }
 
-std::string eCRPIFrame::setPayloadSize(std::string payloadSize) {
+void eCRPIFrame::setPayloadSize(std::string payloadSize) {
     this -> payloadSize = payloadSize;
 }
 
-std::string eCRPIFrame::setRtcId(std::string rtcId) {
+void eCRPIFrame::setRtcId(std::string rtcId) {
     this -> rtcId = rtcId;
 }
 
-std::string eCRPIFrame::setSequenceId(std::string sequenceId) {
+void eCRPIFrame::setSequenceId(std::string sequenceId) {
     this -> sequenceId = sequenceId;
 }
 
-std::string eCRPIFrame::setProtocolVersion(std::string protocolVersion) {
+void eCRPIFrame::setProtocolVersion(std::string protocolVersion) {
     this -> protocolVersion = protocolVersion;
 }
 
-std::string eCRPIFrame::setConcatenationIndicator(std::string concatenationIndicator) {
+void eCRPIFrame::setConcatenationIndicator(std::string concatenationIndicator) {
     this -> concatenationIndicator = concatenationIndicator;
 }
 
