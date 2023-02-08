@@ -1,4 +1,4 @@
-#include "../header/FileReader.h"
+#include "../../header/File/FileReader.h"
 
 FileReader::FileReader(std::string fileName) : FileHandling(fileName)
 {

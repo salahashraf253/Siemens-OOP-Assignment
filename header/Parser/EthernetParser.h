@@ -3,8 +3,8 @@
 
 #include "Parser.h"
 #include <string>
-#include "Frame.h"
-#include "EthernetFrame.h"
+#include "../Frame/Frame.h"
+#include "../Frame/EthernetFrame.h"
 
 class EthernetParser : public Parser
 {

@@ -1,4 +1,4 @@
-#include "../header/EthernetFrame.h"
+#include "../../header/Frame/EthernetFrame.h"
 
 
 EthernetFrame::EthernetFrame() {

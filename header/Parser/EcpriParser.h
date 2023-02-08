@@ -1,6 +1,6 @@
 #include "Parser.h"
-#include "Frame.h"
-#include "eCRPIFrame.h"
+#include "../Frame/Frame.h"
+#include "../Frame/eCRPIFrame.h"
 #include <string>
 
 #ifndef UNTITLED_ECPRIPARSER_H

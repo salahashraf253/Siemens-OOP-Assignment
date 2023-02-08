@@ -1,9 +1,9 @@
 #include <string>
 #include <vector>
-#include "FileReader.h"
-#include "FileWriter.h"
-#include "Frame.h"
-#include "ParserFactory.h"
+#include "./File/FileReader.h"
+#include "./File/FileWriter.h"
+#include "./Frame/Frame.h"
+#include "./Parser/ParserFactory.h"
 
 class Runner
 {

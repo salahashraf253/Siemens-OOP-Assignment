@@ -9,5 +9,4 @@ int main()
     runnner.writeParsedFrames("Somehting.txt");
     runnner.printParsedFrame();
 
-
 }
