@@ -1,8 +1,8 @@
 #include <fstream>
-#include<string>
+#include <string>
 
-// #ifndef UNTITLED_FILEHANDLING_H
-// #define UNTITLED_FILEHANDLING_H
+#ifndef UNTITLED_FILEHANDLING_H
+#define UNTITLED_FILEHANDLING_H
 
 class FileHandling
 {
@@ -18,4 +18,4 @@ public:
     ~FileHandling();
 };
 
-// #endif 
+#endif
