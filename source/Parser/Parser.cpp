@@ -1,11 +1,5 @@
 #include "../../header/Parser/Parser.h"
 
-Parser::Parser()
-{
-}
-Parser::~Parser()
-{
-}
 std::string Parser::getDestinationAddress()
 {
     std::string destinationAddress = this->rawPacket.substr(16, 12);

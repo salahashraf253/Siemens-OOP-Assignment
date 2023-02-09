@@ -3,6 +3,16 @@
 
 #include <string>
 #include "../Frame/Frame.h"
+#include "../FrameFields/ConcatenationIndicator.h"
+#include "../FrameFields/CRC.h"
+#include "../FrameFields/DestinationAddress.h"
+#include "../FrameFields/FrameType.h"
+#include "../FrameFields/MessageType.h"
+#include "../FrameFields/PayloadSize.h"
+#include "../FrameFields/ProtocolVersion.h"
+#include "../FrameFields/RtcId.h"
+#include "../FrameFields/SequenceId.h"
+#include "../FrameFields/SourceAddress.h"
 
 class Parser
 {
@@ -18,8 +28,6 @@ public:
     std::string getData();
     void setRawPacket(std::string rawPacket);
     virtual Frame *getParsedFrame() = 0;
-    Parser();
-    ~Parser();
 };
 
 #endif
