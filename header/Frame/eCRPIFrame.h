@@ -11,9 +11,7 @@ private:
     std::string sequenceId;
     std::string protocolVersion;
     std::string concatenationIndicator;
-    /* data */
 public:
-    eCRPIFrame(/* args */);
     std::string toString() override;
     void setMessageType(std::string);
     void setPayloadSize(std::string);
@@ -21,6 +19,5 @@ public:
     void setSequenceId(std::string);
     void setProtocolVersion(std::string);
     void setConcatenationIndicator(std::string);
-    ~eCRPIFrame();
 };
 
