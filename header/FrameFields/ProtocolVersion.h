@@ -1,7 +1,6 @@
 class ProtocolVersion
 {
 public:
-    static int const startIndex=44;
-    static int const size=1;
+    static const int startIndex = 44;
+    static const int size = 1;
 };
-

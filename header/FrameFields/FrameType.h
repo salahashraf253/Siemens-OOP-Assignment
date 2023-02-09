@@ -1,6 +1,6 @@
 class FrameType
 {
 public:
-    static int const startIndex = 40;
-    static int const size = 4;
+    static const int startIndex = 40;
+    static const int size = 4;
 };

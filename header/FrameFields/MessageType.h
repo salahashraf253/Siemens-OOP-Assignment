@@ -1,6 +1,6 @@
 class MessageType
 {
 public:
-    static int const startIndex = 46;
-    static int const size = 2;
+    static const int startIndex = 46;
+    static const int size = 2;
 };

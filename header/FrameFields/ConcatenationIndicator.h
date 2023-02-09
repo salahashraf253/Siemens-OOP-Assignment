@@ -1,6 +1,6 @@
 class ConcatenationIndicator
 {
 public:
-    static int const startIndex = 45;
-    static int const size = 1;
+    static const int startIndex = 45;
+    static const int size = 1;
 };

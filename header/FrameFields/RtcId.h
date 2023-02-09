@@ -1,7 +1,6 @@
 class RtcId
 {
 public:
-    static int const startIndex=52;
-    static int const size=4;
+    static const int startIndex = 52;
+    static const int size = 4;
 };
-

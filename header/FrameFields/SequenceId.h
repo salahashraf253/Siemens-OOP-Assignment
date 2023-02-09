@@ -1,6 +1,6 @@
 class SequenceId
 {
 public:
-    static int const startIndex = 56;
-    static int const size = 4;
+    static const int startIndex = 56;
+    static const int size = 4;
 };
