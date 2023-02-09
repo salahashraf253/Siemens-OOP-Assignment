@@ -7,6 +7,8 @@ Runner::Runner()
 }
 Runner::~Runner()
 {
+    for(int i = 0; i < parsedFrames.size(); ++i)
+        delete parsedFrames[i];
 }
 
 void Runner::readFrames(std::string filename)
@@ -31,7 +33,7 @@ void Runner::parseFrames() {
         unknownParser -> setRawPacket(rawPackets[i]);
         Frame* parsedFrame = unknownParser -> getParsedFrame();
         parsedFrames.push_back(parsedFrame);
-
+        delete unknownParser;
     }
 }
 void Runner::writeParsedFrames(std::string filename)
