@@ -17,10 +17,9 @@ void Runner::readFrames(std::string filename)
 }
 void Runner::parseFrames()
 {
-    ParserFactory factory;
     for (int i = 0; i < rawPackets.size(); ++i)
     {
-        Parser *unknownParser = factory.getParser(Parser::getType(rawPackets[i]));
+        Parser *unknownParser = ParserFactory::getParser(Parser::getType(rawPackets[i]));
         unknownParser->setRawPacket(rawPackets[i]);
         Frame *parsedFrame = unknownParser->getParsedFrame();
         parsedFrames.push_back(parsedFrame);
