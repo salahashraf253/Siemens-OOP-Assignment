@@ -1,4 +1,4 @@
-class ProtcolVersion
+class ProtocolVersion
 {
 public:
     static int const startIndex=44;
