@@ -1,10 +1,10 @@
+#ifndef UNTITLED_FILEREADER_H
+#define UNTITLED_FILEREADER_H
+
 #include <fstream>
 #include "FileHandling.h"
 
-// #ifndef UNTITLED_FILEREADER_H
-// #define UNTITLED_FILEREADER_H
-
-class FileReader: public FileHandling
+class FileReader : public FileHandling
 {
 private:
     std::ifstream fileStream;
@@ -15,6 +15,5 @@ public:
     std::string readLine();
     void close() override;
     FileReader(std::string);
-    ~FileReader();
 };
-// #endif 
+#endif

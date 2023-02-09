@@ -9,6 +9,3 @@ std::string FileHandling::getFileName()
 {
     return this->fileName;
 }
-FileHandling::~FileHandling()
-{
-}

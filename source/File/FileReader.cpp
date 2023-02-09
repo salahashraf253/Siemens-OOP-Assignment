@@ -23,6 +23,3 @@ void FileReader::close()
 {
     this->fileStream.close();
 }
-FileReader::~FileReader()
-{
-}

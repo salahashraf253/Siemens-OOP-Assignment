@@ -22,6 +22,3 @@ void FileWriter::close()
 {
     this->fileStream.close();
 }
-FileWriter::~FileWriter()
-{
-}
