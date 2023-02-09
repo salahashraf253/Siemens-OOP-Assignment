@@ -1,15 +1,17 @@
 #include "../../header/Parser/ParserFactory.h"
 
-Parser* ParserFactory::getParser(std::string packetType)
+std::string ParserFactory::ethernetFrameType = "88F7";
+std::string ParserFactory::ecpriFrameType = "AEFE";
+
+Parser *ParserFactory::getParser(std::string packetType)
 {
-    if (packetType=="88F7")
+    if (packetType == ethernetFrameType)
     {
         return new EthernetParser();
     }
-    else if(packetType=="AEFE")
+    else if (packetType == ecpriFrameType)
     {
         return new EcpriParser();
-    } else {
-        return nullptr;
     }
+    return nullptr;
 }
