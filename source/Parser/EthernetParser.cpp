@@ -1,13 +1,5 @@
 #include "../../header/Parser/EthernetParser.h"
 
-EthernetParser::EthernetParser():Parser()
-{
-
-}
-EthernetParser::~EthernetParser()
-{
-
-}
 EthernetFrame* EthernetParser::getParsedFrame()
 {
     EthernetFrame* ethernetFrame = new EthernetFrame();

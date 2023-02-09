@@ -10,7 +10,5 @@ class EthernetParser : public Parser
 {
 public:
     EthernetFrame *getParsedFrame() override;
-    EthernetParser();
-    ~EthernetParser();
 };
 #endif
