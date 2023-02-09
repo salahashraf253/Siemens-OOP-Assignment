@@ -8,5 +8,5 @@
   </ul>
 
  <h1>UML Class Diagram </h1>
-<p> <img src="https://github.com/salahashraf253/Siemens-OOP-Assignment/blob/main/Class%20Diagram.png"/> </p>
+<p> <img src="https://github.com/salahashraf253/Siemens-OOP-Assignment/blob/main/Class%20Diagram.png?raw=true"/> </p>
 
