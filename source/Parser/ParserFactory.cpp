@@ -13,11 +13,11 @@ Parser* ParserFactory::getParser(std::string packetType)
         return nullptr;
     }
 }
-ParserFactory::ParserFactory()
-{
+// ParserFactory::ParserFactory()
+// {
 
-}
-ParserFactory::~ParserFactory()
-{
+// }
+// ParserFactory::~ParserFactory()
+// {
 
-}
+// }
