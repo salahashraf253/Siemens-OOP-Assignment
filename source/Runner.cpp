@@ -4,7 +4,7 @@
 
 void Runner::readFrames(std::string filename)
 {
-    FileReader fileToRead("input_packets.txt");
+    FileReader fileToRead(filename);
     fileToRead.open();
     while (fileToRead.isGood())
     {
@@ -25,7 +25,6 @@ void Runner::parseFrames()
         parsedFrames.push_back(parsedFrame);
         delete unknownParser;
     }
-    std::cout << this->parsedFrames.size() << "\n";
 }
 void Runner::writeParsedFrames(std::string filename)
 {
