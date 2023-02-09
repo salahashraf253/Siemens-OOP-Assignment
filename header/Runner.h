@@ -12,9 +12,8 @@ private:
     std::vector<Frame* >parsedFrames;
     void parseFrames();
 public:
-    Runner();
-    ~Runner();
     void readFrames(std:: string);
     void writeParsedFrames(std::string);
     void printParsedFrame();
+    ~Runner();
 };
