@@ -1,10 +1,10 @@
+#ifndef UNTITLED_ECPRIPARSER_H
+#define UNTITLED_ECPRIPARSER_H
+
 #include "Parser.h"
 #include "../Frame/Frame.h"
 #include "../Frame/eCRPIFrame.h"
 #include <string>
-
-#ifndef UNTITLED_ECPRIPARSER_H
-#define UNTITLED_ECPRIPARSER_H
 
 class EcpriParser : public Parser
 {
@@ -18,8 +18,6 @@ private:
 
 public:
     eCRPIFrame *getParsedFrame() override;
-    EcpriParser();
-    ~EcpriParser();
 };
 
 #endif
