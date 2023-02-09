@@ -1,12 +1,10 @@
-#include <iostream>
 #include "header/Runner.h"
 
 int main()
 {
     Runner runnner;
-    std::cout << "Hello\n";
     runnner.readFrames("input_packets.txt");
-    runnner.writeParsedFrames("Somehting.txt");
+    runnner.writeParsedFrames("output_parsed_packets.txt");
     runnner.printParsedFrame();
 
 }
