@@ -12,14 +12,12 @@ private:
     std::string type;
     std::string CRC;
 public:
-    Frame();
     virtual std::string toString();
     void setRawPacket (std::string);
     void setSourceAddress (std::string);
     void setDestinationAddress (std::string);
     void setType (std::string);
     void setCRC (std::string);
-    virtual ~Frame();
 };
 
 #endif 
